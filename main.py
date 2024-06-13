@@ -3,19 +3,29 @@ import os
 
 from elasticsearch import Elasticsearch
 import time
+import logging
+
+logging.basicConfig(filename='app.log', level=logging.info, format='%(asctime)s %(levelname)s %(message)s')
+logger = logging.getLogger()
 
 # Create an instance of Elasticsearch
 es = Elasticsearch(os.environ.get("es_server"), api_key=os.environ.get("es_api"))
 
 # fuction name: get_sales_from_bc purpose: get sales from api every 2 minutes and iterate through the purchases and index them in elastic search
 def get_sales_from_bc():
-    # get the sales from the bandcamp API
-    response = requests.get("https://bandcamp.com/api/salesfeed/1/get?start=0&count=50")
-    response = response.json()
-    response = response["events"]
-
-    return response
-
+    try:
+        # get the sales from the bandcamp API
+        response = requests.get("https://bandcamp.com/api/salesfeed/1/get?start=0&count=50")
+        response = response.json()
+        response = response["events"]
+    
+        logging.info("Sales fetched from Bandcamp API")
+    
+        return response
+    
+    except Exception as e:
+        logging.error(f"Error fetching sales from Bandcamp API: {e}")
+        return []
 
 def add_purchases(purchases):
     for purchase in purchases:
@@ -122,7 +132,7 @@ def add_purchase(purchase):
     
     # Add the purchase to the purchases index
     new_purchase = es.index(index="purchases", body=purchase)
-
+    logger.info(f"Purchase added: {purchase['album_title']}")
     # Return a success message
     return {
         "message": "Purchase added successfully",
@@ -132,5 +142,5 @@ def add_purchase(purchase):
 while True:
     purchases = get_sales_from_bc()
     add_purchases(purchases)
-    print("Sleeping for 2 minutes...")
+    logger.info("Sleeping for 2 minutes...")
     time.sleep(120)
