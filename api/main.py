@@ -1,15 +1,11 @@
 import requests
 import os
-
-from fastapi import FastAPI
 import time
 import logging
-# from elasticsearch import Elasticsearch
+from elasticsearch import Elasticsearch
 
 logging.basicConfig(filename='app.log', level="INFO", format='%(asctime)s %(levelname)s %(message)s')
 logger = logging.getLogger()
-
-app = FastAPI()
 
 # Create an instance of Elasticsearch
 es = Elasticsearch(os.environ.get("es_server"), api_key=os.environ.get("es_api"))
@@ -97,18 +93,18 @@ def add_purchase(purchase):
     }
 
     # Update the artist object in Elasticsearch
-    # artist_update = es.update(
-    #     index = "artists",
-    #     id = purchase["account_username"],
-    #     body = body,
-    #     upsert = {
-    #         "account_name": purchase["account_username"],
-    #         "url": purchase["url"],
-    #         "purchase_count": 0,
-    #         "total_revenue": purchase["amount_paid_usd"],
-    #         "countries": [purchase["country"]],
-    #     },
-    # )
+    artist_update = es.update(
+        index = "artists",
+        id = purchase["account_username"],
+        body = body,
+        upsert = {
+            "account_name": purchase["account_username"],
+            "url": purchase["url"],
+            "purchase_count": 0,
+            "total_revenue": purchase["amount_paid_usd"],
+            "countries": [purchase["country"]],
+        },
+    )
 
     country_script = {
         "script": {
@@ -124,22 +120,22 @@ def add_purchase(purchase):
         }
     }
 
-    # es.update(
-    #     index = "countries",
-    #     id = purchase["country_code"],
-    #     body = country_script,
-    #     upsert = {
-    #         "country_code": purchase["country_code"],
-    #         "country_name": purchase["country"],
-    #     })
+    es.update(
+        index = "countries",
+        id = purchase["country_code"],
+        body = country_script,
+        upsert = {
+            "country_code": purchase["country_code"],
+            "country_name": purchase["country"],
+        })
     
     # Add the purchase to the purchases index
-    # new_purchase = es.index(index="purchases", body=purchase)
+    new_purchase = es.index(index="purchases", body=purchase)
     logger.info(f"Purchase added: {purchase['album_title']}")
     # Return a success message
     return {
         "message": "Purchase added successfully",
-        # "artist_update": bool(artist_update["_shards"]["successful"]),
+        "artist_update": bool(artist_update["_shards"]["successful"]),
     }
 
 while True:

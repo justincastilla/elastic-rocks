@@ -2798,3 +2798,205 @@ elastic_transport.TlsError: TLS error caused by: SSLError(EOF occurred in violat
 2024-06-17 15:32:50,979 INFO Purchase added: O Life, O Light Vol. 2
 2024-06-17 15:32:50,979 INFO Purchase added: Temporal Waves
 2024-06-17 15:32:50,980 INFO Sleeping for 2 minutes...
+2024-06-17 15:34:01,687 INFO Sales fetched from Bandcamp API
+2024-06-17 15:34:01,838 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/artists/_update/cabinetrecords [status:200 duration:0.105s]
+2024-06-17 15:34:01,872 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/countries/_update/GB [status:200 duration:0.026s]
+2024-06-17 15:34:01,895 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/purchases/_doc [status:201 duration:0.022s]
+2024-06-17 15:34:01,895 INFO Purchase added: cabinet 38
+2024-06-17 15:34:01,936 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/artists/_update/dillard [status:201 duration:0.035s]
+2024-06-17 15:34:01,963 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/countries/_update/CA [status:200 duration:0.021s]
+2024-06-17 15:34:01,993 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/purchases/_doc [status:201 duration:0.029s]
+2024-06-17 15:34:01,993 INFO Purchase added: None
+2024-06-17 15:34:02,026 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/artists/_update/clubfelinas [status:200 duration:0.025s]
+2024-06-17 15:34:02,058 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/countries/_update/DE [status:200 duration:0.022s]
+2024-06-17 15:34:02,084 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/purchases/_doc [status:201 duration:0.026s]
+2024-06-17 15:34:02,084 INFO Purchase added: Club felinas records
+2024-06-17 15:34:02,107 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/artists/_update/ity-sound [status:201 duration:0.019s]
+2024-06-17 15:34:02,137 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/countries/_update/US [status:200 duration:0.023s]
+2024-06-17 15:34:02,163 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/purchases/_doc [status:201 duration:0.027s]
+2024-06-17 15:34:02,164 INFO Purchase added: No Road No Problem
+2024-06-17 15:34:02,190 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/artists/_update/mattwalkermusic [status:201 duration:0.020s]
+2024-06-17 15:34:02,217 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/countries/_update/AU [status:200 duration:0.022s]
+2024-06-17 15:34:02,240 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/purchases/_doc [status:201 duration:0.023s]
+2024-06-17 15:34:02,240 INFO Purchase added: None
+2024-06-17 15:34:02,268 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/artists/_update/matasunarecords [status:201 duration:0.022s]
+2024-06-17 15:34:02,296 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/countries/_update/BE [status:200 duration:0.023s]
+2024-06-17 15:34:02,327 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/purchases/_doc [status:201 duration:0.030s]
+2024-06-17 15:34:02,327 INFO Purchase added: Batua | Love Me & Give Up
+2024-06-17 15:34:02,357 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/artists/_update/astrophysicsbrazil [status:200 duration:0.023s]
+2024-06-17 15:34:02,385 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/countries/_update/US [status:200 duration:0.019s]
+2024-06-17 15:34:02,411 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/purchases/_doc [status:201 duration:0.025s]
+2024-06-17 15:34:02,411 INFO Purchase added: The Unending Need For Perpetual Motion
+2024-06-17 15:34:02,448 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/artists/_update/armoredsaint [status:201 duration:0.027s]
+2024-06-17 15:34:02,480 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/countries/_update/GB [status:200 duration:0.022s]
+2024-06-17 15:34:02,511 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/purchases/_doc [status:201 duration:0.030s]
+2024-06-17 15:34:02,511 INFO Purchase added: Symbol of Salvation (Special Edition)
+2024-06-17 15:34:02,548 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/artists/_update/knowermusic [status:200 duration:0.025s]
+2024-06-17 15:34:02,581 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/countries/_update/US [status:200 duration:0.020s]
+2024-06-17 15:34:02,609 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/purchases/_doc [status:201 duration:0.028s]
+2024-06-17 15:34:02,609 INFO Purchase added: None
+2024-06-17 15:34:02,645 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/artists/_update/lamediscos [status:201 duration:0.023s]
+2024-06-17 15:34:02,676 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/countries/_update/DE [status:200 duration:0.022s]
+2024-06-17 15:34:02,705 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/purchases/_doc [status:201 duration:0.029s]
+2024-06-17 15:34:02,705 INFO Purchase added: None
+2024-06-17 15:34:02,743 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/artists/_update/relic [status:201 duration:0.023s]
+2024-06-17 15:34:02,774 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/countries/_update/DE [status:200 duration:0.021s]
+2024-06-17 15:34:02,803 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/purchases/_doc [status:201 duration:0.028s]
+2024-06-17 15:34:02,803 INFO Purchase added: The 13th Floor
+2024-06-17 15:34:02,840 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/artists/_update/soundofthesuburbs [status:200 duration:0.026s]
+2024-06-17 15:34:02,882 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/countries/_update/GB [status:200 duration:0.033s]
+2024-06-17 15:34:02,913 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/purchases/_doc [status:201 duration:0.031s]
+2024-06-17 15:34:02,913 INFO Purchase added: None
+2024-06-17 15:34:02,956 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/artists/_update/weaponsofchoicerecordings [status:201 duration:0.030s]
+2024-06-17 15:34:02,990 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/countries/_update/GB [status:200 duration:0.022s]
+2024-06-17 15:34:03,017 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/purchases/_doc [status:201 duration:0.027s]
+2024-06-17 15:34:03,017 INFO Purchase added: Furney - Seventh Ep
+2024-06-17 15:34:03,057 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/artists/_update/kompakt [status:200 duration:0.027s]
+2024-06-17 15:34:03,087 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/countries/_update/GB [status:200 duration:0.020s]
+2024-06-17 15:34:03,116 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/purchases/_doc [status:201 duration:0.028s]
+2024-06-17 15:34:03,116 INFO Purchase added: Time Safari
+2024-06-17 15:34:03,145 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/artists/_update/darkdescentrecords [status:200 duration:0.023s]
+2024-06-17 15:34:03,186 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/countries/_update/US [status:200 duration:0.031s]
+2024-06-17 15:34:03,212 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/purchases/_doc [status:201 duration:0.026s]
+2024-06-17 15:34:03,212 INFO Purchase added: Harvest of Malevolence
+2024-06-17 15:34:03,255 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/artists/_update/orionthefallen [status:201 duration:0.028s]
+2024-06-17 15:34:03,292 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/countries/_update/US [status:200 duration:0.024s]
+2024-06-17 15:34:03,324 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/purchases/_doc [status:201 duration:0.031s]
+2024-06-17 15:34:03,324 INFO Purchase added: None
+2024-06-17 15:34:03,379 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/artists/_update/luxury [status:201 duration:0.040s]
+2024-06-17 15:34:03,427 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/countries/_update/US [status:200 duration:0.038s]
+2024-06-17 15:34:03,452 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/purchases/_doc [status:201 duration:0.024s]
+2024-06-17 15:34:03,452 INFO Purchase added: Like Unto Lambs
+2024-06-17 15:34:03,487 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/artists/_update/music.tolivealie.com%2Falbum%2Fcanadian-horse-lp [status:201 duration:0.020s]
+2024-06-17 15:34:03,523 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/countries/_update/PL [status:200 duration:0.022s]
+2024-06-17 15:34:03,545 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/purchases/_doc [status:201 duration:0.022s]
+2024-06-17 15:34:03,545 INFO Purchase added: None
+2024-06-17 15:34:03,589 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/artists/_update/briefbombe [status:201 duration:0.029s]
+2024-06-17 15:34:03,621 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/countries/_update/DE [status:200 duration:0.021s]
+2024-06-17 15:34:03,650 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/purchases/_doc [status:201 duration:0.029s]
+2024-06-17 15:34:03,650 INFO Purchase added: None
+2024-06-17 15:34:03,685 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/artists/_update/entranas [status:200 duration:0.020s]
+2024-06-17 15:34:03,712 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/countries/_update/DE [status:200 duration:0.018s]
+2024-06-17 15:34:03,737 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/purchases/_doc [status:201 duration:0.025s]
+2024-06-17 15:34:03,738 INFO Purchase added: Trashy Edits
+2024-06-17 15:34:03,775 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/artists/_update/jonahyano [status:201 duration:0.024s]
+2024-06-17 15:34:03,805 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/countries/_update/NZ [status:200 duration:0.018s]
+2024-06-17 15:34:03,831 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/purchases/_doc [status:201 duration:0.025s]
+2024-06-17 15:34:03,831 INFO Purchase added: None
+2024-06-17 15:34:03,869 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/artists/_update/williamtutton [status:201 duration:0.026s]
+2024-06-17 15:34:03,902 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/countries/_update/US [status:200 duration:0.023s]
+2024-06-17 15:34:03,929 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/purchases/_doc [status:201 duration:0.027s]
+2024-06-17 15:34:03,930 INFO Purchase added: None
+2024-06-17 15:34:03,967 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/artists/_update/brvss [status:201 duration:0.025s]
+2024-06-17 15:34:04,004 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/countries/_update/MX [status:200 duration:0.026s]
+2024-06-17 15:34:04,029 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/purchases/_doc [status:201 duration:0.025s]
+2024-06-17 15:34:04,030 INFO Purchase added: None
+2024-06-17 15:34:04,068 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/artists/_update/esmuzik [status:201 duration:0.025s]
+2024-06-17 15:34:04,097 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/countries/_update/US [status:200 duration:0.018s]
+2024-06-17 15:34:04,126 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/purchases/_doc [status:201 duration:0.028s]
+2024-06-17 15:34:04,126 INFO Purchase added: None
+2024-06-17 15:34:04,159 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/artists/_update/bergaudio [status:200 duration:0.022s]
+2024-06-17 15:34:04,196 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/countries/_update/GB [status:200 duration:0.026s]
+2024-06-17 15:34:04,222 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/purchases/_doc [status:201 duration:0.026s]
+2024-06-17 15:34:04,222 INFO Purchase added: DAN GOUL - PARAGLIDER
+2024-06-17 15:34:04,264 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/artists/_update/wehavepaws [status:201 duration:0.029s]
+2024-06-17 15:34:04,294 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/countries/_update/GB [status:200 duration:0.019s]
+2024-06-17 15:34:04,321 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/purchases/_doc [status:201 duration:0.027s]
+2024-06-17 15:34:04,322 INFO Purchase added: PAWS
+2024-06-17 15:34:04,353 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/artists/_update/traaampaaa [status:201 duration:0.018s]
+2024-06-17 15:34:04,392 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/countries/_update/DE [status:200 duration:0.030s]
+2024-06-17 15:34:04,422 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/purchases/_doc [status:201 duration:0.030s]
+2024-06-17 15:34:04,423 INFO Purchase added: Augurio
+2024-06-17 15:34:04,457 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/artists/_update/lisztomaniarec [status:200 duration:0.024s]
+2024-06-17 15:34:04,487 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/countries/_update/US [status:200 duration:0.019s]
+2024-06-17 15:34:04,514 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/purchases/_doc [status:201 duration:0.027s]
+2024-06-17 15:34:04,514 INFO Purchase added: No Fight Tonight
+2024-06-17 15:34:04,549 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/artists/_update/suicidecages [status:201 duration:0.024s]
+2024-06-17 15:34:04,581 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/countries/_update/US [status:200 duration:0.019s]
+2024-06-17 15:34:04,609 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/purchases/_doc [status:201 duration:0.028s]
+2024-06-17 15:34:04,610 INFO Purchase added: Mother of Thousands
+2024-06-17 15:34:04,643 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/artists/_update/synovamusic [status:200 duration:0.021s]
+2024-06-17 15:34:04,673 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/countries/_update/NO [status:200 duration:0.020s]
+2024-06-17 15:34:04,701 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/purchases/_doc [status:201 duration:0.028s]
+2024-06-17 15:34:04,701 INFO Purchase added: None
+2024-06-17 15:34:04,744 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/artists/_update/stickfigure [status:201 duration:0.028s]
+2024-06-17 15:34:04,783 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/countries/_update/US [status:200 duration:0.028s]
+2024-06-17 15:34:04,817 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/purchases/_doc [status:201 duration:0.033s]
+2024-06-17 15:34:04,817 INFO Purchase added: None
+2024-06-17 15:34:04,853 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/artists/_update/jpegmafia [status:200 duration:0.025s]
+2024-06-17 15:34:04,893 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/countries/_update/US [status:200 duration:0.029s]
+2024-06-17 15:34:04,916 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/purchases/_doc [status:201 duration:0.023s]
+2024-06-17 15:34:04,917 INFO Purchase added: None
+2024-06-17 15:34:04,951 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/artists/_update/aslsinglesclub [status:201 duration:0.021s]
+2024-06-17 15:34:04,989 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/countries/_update/GB [status:200 duration:0.025s]
+2024-06-17 15:34:05,017 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/purchases/_doc [status:201 duration:0.027s]
+2024-06-17 15:34:05,017 INFO Purchase added: 'Anform' EP
+2024-06-17 15:34:05,053 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/artists/_update/realworldrecords [status:201 duration:0.022s]
+2024-06-17 15:34:05,088 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/countries/_update/US [status:200 duration:0.024s]
+2024-06-17 15:34:05,115 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/purchases/_doc [status:201 duration:0.027s]
+2024-06-17 15:34:05,116 INFO Purchase added: None
+2024-06-17 15:34:05,160 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/artists/_update/cclurl [status:201 duration:0.028s]
+2024-06-17 15:34:05,190 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/countries/_update/IE [status:200 duration:0.020s]
+2024-06-17 15:34:05,214 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/purchases/_doc [status:201 duration:0.023s]
+2024-06-17 15:34:05,214 INFO Purchase added: None
+2024-06-17 15:34:05,249 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/artists/_update/philemoncimon [status:201 duration:0.025s]
+2024-06-17 15:34:05,285 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/countries/_update/CA [status:200 duration:0.025s]
+2024-06-17 15:34:05,313 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/purchases/_doc [status:201 duration:0.027s]
+2024-06-17 15:34:05,313 INFO Purchase added: None
+2024-06-17 15:34:05,353 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/artists/_update/alicephoebelou [status:200 duration:0.025s]
+2024-06-17 15:34:05,391 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/countries/_update/US [status:200 duration:0.027s]
+2024-06-17 15:34:05,417 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/purchases/_doc [status:201 duration:0.026s]
+2024-06-17 15:34:05,417 INFO Purchase added: None
+2024-06-17 15:34:05,452 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/artists/_update/mutualpleasure [status:200 duration:0.020s]
+2024-06-17 15:34:05,489 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/countries/_update/GB [status:200 duration:0.026s]
+2024-06-17 15:34:05,524 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/purchases/_doc [status:201 duration:0.035s]
+2024-06-17 15:34:05,525 INFO Purchase added: Unit Boy - SSW
+2024-06-17 15:34:05,560 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/artists/_update/hiedrah [status:201 duration:0.020s]
+2024-06-17 15:34:05,600 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/countries/_update/DE [status:200 duration:0.029s]
+2024-06-17 15:34:05,627 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/purchases/_doc [status:201 duration:0.027s]
+2024-06-17 15:34:05,628 INFO Purchase added: Mantris Nikkita
+2024-06-17 15:34:05,663 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/artists/_update/firecrackerrecordings [status:201 duration:0.020s]
+2024-06-17 15:34:05,700 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/countries/_update/GB [status:200 duration:0.025s]
+2024-06-17 15:34:05,727 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/purchases/_doc [status:201 duration:0.027s]
+2024-06-17 15:34:05,727 INFO Purchase added: FIREC023 Modern Species
+2024-06-17 15:34:05,774 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/artists/_update/tylumnus [status:201 duration:0.031s]
+2024-06-17 15:34:05,815 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/countries/_update/GB [status:200 duration:0.028s]
+2024-06-17 15:34:05,840 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/purchases/_doc [status:201 duration:0.025s]
+2024-06-17 15:34:05,840 INFO Purchase added: Phase Music
+2024-06-17 15:34:05,869 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/artists/_update/laughingbuddha [status:201 duration:0.024s]
+2024-06-17 15:34:05,894 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/countries/_update/RS [status:200 duration:0.021s]
+2024-06-17 15:34:05,920 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/purchases/_doc [status:201 duration:0.025s]
+2024-06-17 15:34:05,920 INFO Purchase added: None
+2024-06-17 15:34:05,948 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/artists/_update/plenamente [status:201 duration:0.023s]
+2024-06-17 15:34:05,974 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/countries/_update/GB [status:200 duration:0.021s]
+2024-06-17 15:34:06,003 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/purchases/_doc [status:201 duration:0.028s]
+2024-06-17 15:34:06,003 INFO Purchase added: None
+2024-06-17 15:34:06,032 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/artists/_update/gunnsroadmusic [status:200 duration:0.024s]
+2024-06-17 15:34:06,058 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/countries/_update/CA [status:200 duration:0.020s]
+2024-06-17 15:34:06,085 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/purchases/_doc [status:201 duration:0.026s]
+2024-06-17 15:34:06,085 INFO Purchase added: KRUGAH - MY WAY LP SAMLER 12" PRE-ORDER
+2024-06-17 15:34:06,113 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/artists/_update/robertleiner [status:201 duration:0.022s]
+2024-06-17 15:34:06,152 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/countries/_update/GB [status:200 duration:0.032s]
+2024-06-17 15:34:06,179 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/purchases/_doc [status:201 duration:0.027s]
+2024-06-17 15:34:06,179 INFO Purchase added: None
+2024-06-17 15:34:06,209 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/artists/_update/larissv [status:201 duration:0.025s]
+2024-06-17 15:34:06,238 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/countries/_update/DE [status:200 duration:0.022s]
+2024-06-17 15:34:06,266 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/purchases/_doc [status:201 duration:0.028s]
+2024-06-17 15:34:06,266 INFO Purchase added: None
+2024-06-17 15:34:06,291 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/artists/_update/galcherlustwerk [status:200 duration:0.020s]
+2024-06-17 15:34:06,317 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/countries/_update/GB [status:200 duration:0.021s]
+2024-06-17 15:34:06,342 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/purchases/_doc [status:201 duration:0.025s]
+2024-06-17 15:34:06,342 INFO Purchase added: Black Power Electronics
+2024-06-17 15:34:06,369 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/artists/_update/burial [status:200 duration:0.023s]
+2024-06-17 15:34:06,396 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/countries/_update/US [status:200 duration:0.023s]
+2024-06-17 15:34:06,423 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/purchases/_doc [status:201 duration:0.027s]
+2024-06-17 15:34:06,423 INFO Purchase added: None
+2024-06-17 15:34:06,451 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/artists/_update/benfika [status:201 duration:0.022s]
+2024-06-17 15:34:06,475 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/countries/_update/DE [status:200 duration:0.019s]
+2024-06-17 15:34:06,502 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/purchases/_doc [status:201 duration:0.027s]
+2024-06-17 15:34:06,503 INFO Purchase added: None
+2024-06-17 15:34:06,527 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/artists/_update/markgodwin [status:201 duration:0.018s]
+2024-06-17 15:34:06,554 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/countries/_update/US [status:200 duration:0.021s]
+2024-06-17 15:34:06,582 INFO POST https://book.es.westus2.azure.elastic-cloud.com:443/purchases/_doc [status:201 duration:0.027s]
+2024-06-17 15:34:06,582 INFO Purchase added: None
+2024-06-17 15:34:06,582 INFO Sleeping for 2 minutes...
