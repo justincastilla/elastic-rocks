@@ -138,8 +138,6 @@ def add_purchase(purchase):
         "artist_update": bool(artist_update["_shards"]["successful"]),
     }
 
-while True:
-    purchases = get_sales_from_bc()
-    add_purchases(purchases)
-    logger.info("Sleeping for 2 minutes...")
-    time.sleep(120)
+purchases = get_sales_from_bc()
+add_purchases(purchases)
+logger.info("Job's Done!")
