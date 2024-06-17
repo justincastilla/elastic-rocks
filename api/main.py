@@ -2,13 +2,13 @@ import requests
 import os
 import time
 import logging
-from elasticsearch import Elasticsearch
+import elasticsearch
 
 logging.basicConfig(filename='app.log', level="INFO", format='%(asctime)s %(levelname)s %(message)s')
 logger = logging.getLogger()
 
 # Create an instance of Elasticsearch
-es = Elasticsearch(os.environ.get("es_server"), api_key=os.environ.get("es_api"))
+es = elasticsearch.Elasticsearch(os.environ.get("es_server"), api_key=os.environ.get("es_api"))
 
 # fuction name: get_sales_from_bc purpose: get sales from api every 2 minutes and iterate through the purchases and index them in elastic search
 def get_sales_from_bc():
