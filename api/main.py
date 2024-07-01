@@ -1,8 +1,9 @@
 import requests
 import os
-import time
+
 import logging
 import elasticsearch
+import datetime
 
 logging.basicConfig(filename='app.log', level="INFO", format='%(asctime)s %(levelname)s %(message)s')
 logger = logging.getLogger()
@@ -38,9 +39,13 @@ def add_purchases(purchases):
 
 def clean_purchase(purchase):
     purchase = purchase["items"][0]
+    purchase_utc = purchase["utc_date"]
+    utc_datetime = datetime.datetime.fromtimestamp(purchase_utc)
+    timestamp = utc_datetime.strftime("%Y-%m-%dT%H:%M:%S.%fZ")
 
     stripped_purchase = {
         "utc_date": purchase["utc_date"],
+        "timestamp": timestamp,
         "artist_name": purchase["artist_name"],
         "album_title": purchase["album_title"],
         "item_type": purchase["item_type"],
@@ -69,73 +74,18 @@ def add_purchase(purchase):
     Returns:
         dict: A dictionary with a success message and the payload of the purchase.
     """
-
+    
+    # prep purchase for adding to es index 
     purchase = clean_purchase(purchase)
-    
-    # Prepare the update script
-    body = {
-        "script": {
-            "source": """
-                ctx._source.purchase_count += params.purchase_count;
-                ctx._source.total_revenue += params.total_revenue;
-                if (!ctx._source.countries.contains(params.country)) {
-                    ctx._source.countries.add(params.country);
-                }
-            """,
-            "lang": "painless",
-            "params": {
-                "account_name": purchase["account_username"],
-                "country": purchase["country"],
-                "purchase_count": 1,
-                "total_revenue": purchase["amount_paid_usd"],
-            },
-        }
-    }
 
-    # Update the artist object in Elasticsearch
-    artist_update = es.update(
-        index = "artists",
-        id = purchase["account_username"],
-        body = body,
-        upsert = {
-            "account_name": purchase["account_username"],
-            "url": purchase["url"],
-            "purchase_count": 0,
-            "total_revenue": purchase["amount_paid_usd"],
-            "countries": [purchase["country"]],
-        },
-    )
-
-    country_script = {
-        "script": {
-            "source": """
-                ctx._source.revenue = (ctx._source.revenue == null) ? params.revenue : (ctx._source.revenue + params.revenue);
-                ctx._source.count = (ctx._source.count == null) ? params.count : (ctx._source.count + params.count);
-            """,
-            "lang": "painless",
-            "params": {
-                "revenue": purchase["amount_paid_usd"],
-                "count": 1
-            },
-        }
-    }
-
-    es.update(
-        index = "countries",
-        id = purchase["country_code"],
-        body = country_script,
-        upsert = {
-            "country_code": purchase["country_code"],
-            "country_name": purchase["country"],
-        })
-    
     # Add the purchase to the purchases index
     new_purchase = es.index(index="purchases", body=purchase)
     logger.info(f"Purchase added: {purchase['album_title']}")
+    
     # Return a success message
     return {
         "message": "Purchase added successfully",
-        "artist_update": bool(artist_update["_shards"]["successful"]),
+        "artist_update": bool(new_purchase["_shards"]["successful"]),
     }
 
 purchases = get_sales_from_bc()
