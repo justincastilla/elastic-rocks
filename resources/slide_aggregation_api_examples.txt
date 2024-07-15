@@ -1,0 +1,128 @@
+
+
+# 1/4 What are the top 5 selling accounts within a given time span?
+# First lets establish a timestamp range (month of June 2024)
+GET purchases/_search
+{ 
+  "query": {
+    "range": {
+      "timestamp": {
+        "gte": "2024-06-01T00:00:00Z", 
+        "lte": "2024-06-30T11:59:59Z"
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 2/4 What are the top 5 selling accounts within a given time span?
+# Let's aggregate all of the amount_paid_usd. Yes. ALL!
+GET purchases/_search
+{
+  "size": 0,
+  "query": {
+    "range": {
+      "timestamp": {
+        "gte": "2024-06-01T00:00:00Z", 
+        "lte": "2024-06-30T11:59:59Z"
+      }
+    }
+  },
+  "aggs": {
+    "total_amount_paid_usd": {
+      "sum": {
+        "field": "amount_paid_usd"
+      }
+    }
+  }
+}
+
+
+
+
+
+
+# 3/4 What are the top 5 selling accounts within a given time span?
+# Lets use the total_amount_paid_usd aggregation on an aggregation that creates buckets for each account_username (total_amount_paid_usd per account_username)
+GET purchases/_search
+{
+  "size": 0,
+  "query": {
+    "range": {
+      "timestamp": {
+        "gte": "2024-06-01T00:00:00Z", 
+        "lte": "2024-06-30T11:59:59Z"
+      }
+    }
+  },
+  "aggs": {
+    "top_artists": {
+      "terms": {
+        "field": "account_username.keyword",
+        "order": {
+          "total_amount_paid_usd": "desc"
+        }
+      },
+      "aggs": {
+        "total_amount_paid_usd": {
+          "sum": {
+            "field": "amount_paid_usd"
+          }
+        }
+      }
+    }
+  }
+}
+
+# 4/4 What are the top 5 selling accounts within a given time span?
+# Finally, set the return size to 5
+GET purchases/_search
+{
+  "size": 0,
+  "query": {
+    "range": {
+      "timestamp": {
+        "gte": "2024-06-01T00:00:00Z", 
+        "lte": "2024-06-30T11:59:59Z"
+      }
+    }
+  },
+  "aggs": {
+    "top_artists": {
+      "terms": {
+        "field": "account_username.keyword",
+        "size": 5,
+        "order": {
+          "total_amount_paid_usd": "desc"
+        }
+      },
+      "aggs": {
+        "total_amount_paid_usd": {
+          "sum": {
+            "field": "amount_paid_usd"
+          }
+        }
+      }
+    }
+  }
+}
