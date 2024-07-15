@@ -87,7 +87,7 @@ def bulk_add_purchases_to_elastic(purchases):
             logger.error("Error adding purchases to Elasticsearch")
             logger.error(response[1])
         else:
-            logger.info("Purchases added to Elasticsearch")
+            logger.info(f'Purchases added to Elasticsearch: {len(purchases)})
     
     except Exception as e:
         logger.error(f"Error adding purchases to Elasticsearch: {e}")
